@@ -62,7 +62,6 @@ type ItemElement struct {
 	Source    string `xml:"source"`
 }
 
-// FIXME: how to utilize interface? And should it?
 func Encode(t TopElement) ([]byte, error) {
 	return xml.MarshalIndent(t, "", "\t")
 }
